@@ -1,0 +1,55 @@
+
+.product {
+    width: 41%;
+    margin: 24px 0 0 17.7px;
+    img {
+        width: 100%;
+    }
+    &--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+    &_name,&_price {
+        font-size: 12px;
+    }
+    &_price {
+        text-indent: 1em;
+        &:after {
+            content: " +tax";
+        }
+    }
+}
+
+.more {
+    display: block;
+    text-align: center;
+    margin: 46px auto 109px;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1025px) {
+
+    .product {
+        width: 22.6%;
+        margin-top: 42px;
+
+        &--wrapper {
+            margin-top: 30px;
+        }
+        a {
+            transition: .5s;
+            &:hover {
+                opacity: .7;
+            }
+        }
+
+        &_price {
+            text-indent: inherit;
+            &:after {
+                content: "+tax";
+            }
+        }
+    }
+}
