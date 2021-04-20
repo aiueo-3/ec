@@ -1,1 +1,113 @@
-/* No CSS *//*# sourceMappingURL=detail.css.map */
+.product table {
+  font-size: 12px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.product table th {
+  font-weight: 400;
+}
+
+.product table th, .product table td {
+  border-bottom: 1px solid #C3C3C3;
+  border-left: 1px solid #C3C3C3;
+  padding: 12px 22px;
+  text-align: center;
+}
+
+.product table th:first-of-type {
+  border-left: 0;
+}
+
+.product table tr:last-of-type th, .product table tr:last-of-type td {
+  border-bottom: 0;
+}
+
+.product img {
+  width: 100vw;
+  margin: 0 -20px;
+}
+
+.product h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 22px 0;
+  border-top: 1px solid #C3C3C3;
+  border-bottom: 1px solid #C3C3C3;
+}
+
+.product_txt, .product_price {
+  font-size: 12px;
+}
+
+.product_txt {
+  margin-top: 22px;
+}
+
+.product_price {
+  margin-top: 36px;
+}
+
+.product_price:after {
+  content: " +tax";
+}
+
+.product_order {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.product_order td:first-of-type {
+  border-left: 0;
+}
+
+.product_order th:first-of-type, .product_order td:first-of-type {
+  padding: 12px 22px 12px 11px;
+}
+
+.product_order td.product_order--amount {
+  padding: 12px 10px;
+}
+
+.product_order td.product_order--amount select {
+  width: 184px;
+  border: 1px solid #C3C3C3;
+}
+
+.product button {
+  width: 100%;
+  background: #707070;
+  font-size: 12px;
+  color: #fff;
+  padding: 18px 0;
+  margin-top: 20px;
+}
+
+.product_sizechart {
+  border: 1px solid #C3C3C3;
+  margin: 30px 0 100px;
+}
+
+.product_sizechart th {
+  background: #ECEBEB;
+}
+
+@media screen and (min-width: 1025px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+  .product img, .product_info {
+    width: 45%;
+  }
+  .product img {
+    height: 100%;
+    margin: 0;
+  }
+  .product_info {
+    margin-left: 60px;
+  }
+}
+/*# sourceMappingURL=detail.css.map */

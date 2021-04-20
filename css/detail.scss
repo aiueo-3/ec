@@ -1,0 +1,100 @@
+
+.product {
+
+    table {
+        font-size: 12px;
+        border-collapse: collapse;
+        width: 100%;
+        th {
+            font-weight: 400;
+        }
+        th,td {
+            border-bottom: 1px solid #C3C3C3;
+            border-left: 1px solid #C3C3C3;
+            padding: 12px 22px;
+            text-align: center;
+        }
+        th:first-of-type {
+            border-left: 0;
+        }
+        tr:last-of-type {
+            th,td {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    img {
+        width: 100vw;
+        margin: 0 -20px;
+    }
+    h2 {
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 22px 0;
+        border-top: 1px solid #C3C3C3;
+        border-bottom: 1px solid #C3C3C3;
+    }
+    &_txt,&_price {
+        font-size: 12px;
+    }
+    &_txt {
+        margin-top: 22px;
+    }
+    &_price {
+        margin-top: 36px;
+        &:after {
+            content: " +tax";
+        }
+    }
+    &_order {
+        margin-top: 32px;
+        text-align: center;
+        td:first-of-type {
+            border-left: 0;
+        }
+        th:first-of-type,td:first-of-type {
+            padding: 12px 22px 12px 11px;
+        }
+        
+        td.product_order--amount {
+            padding: 12px 10px;
+            select {
+                width: 184px;
+                border: 1px solid #C3C3C3;
+            }
+        }
+    }
+    button {
+        width: 100%;
+        background: #707070;
+        font-size: 12px;
+        color: #fff;
+        padding: 18px 0;
+        margin-top: 20px;
+    }
+    &_sizechart {
+        border: 1px solid #C3C3C3;
+        margin: 30px 0 100px;
+        th {
+            background: #ECEBEB
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .product {
+        display: flex;
+        margin-top: 50px;
+        img,&_info {
+            width: 45%;
+        }
+        img {
+            height: 100%;
+            margin: 0;
+        }
+        &_info {
+            margin-left: 60px;
+        }
+    }
+}
