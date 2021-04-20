@@ -31,6 +31,24 @@
   content: " +tax";
 }
 
+.product.new {
+  position: relative;
+}
+
+.product.new:before {
+  content: "NEW";
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  width: 30px;
+  height: 16px;
+  background: #333;
+  position: absolute;
+  top: -2.5%;
+  right: -5%;
+  z-index: 4;
+}
+
 .more {
   display: block;
   text-align: center;
